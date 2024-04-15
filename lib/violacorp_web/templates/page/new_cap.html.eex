@@ -1,0 +1,8 @@
+<p>Hello <%= @data.director_name %>,</p>
+
+<p><%= @data.company_name %> has added you as the New Authorised Person to use the Web App.<br><br>
+The password has been reset for the company account.<br>
+Password: <%= @data.pswd %><br>
+Regards,</p>
+
+<p>The Viola Corporate Support Team.</p>

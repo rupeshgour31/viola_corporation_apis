@@ -1,0 +1,8 @@
+<p>Hello <%= @data.employee_name %>,</p>
+<p><%= @data.company_name %> has <b>rejected</b> your money request of <%= if @data.currency == "GBP" do "£" end %><%= if @data.currency !== "GBP" do "#{@data.currency} "  end %><%= @data.amount %> for card ending: <%= @data.card %>.<br>
+Remarks:  <%= @data.company_reason %> <br>
+Please contact your administrator for more information. <br>
+
+Regards,</p>
+
+<p>The Viola Corporate Support Team.</p>

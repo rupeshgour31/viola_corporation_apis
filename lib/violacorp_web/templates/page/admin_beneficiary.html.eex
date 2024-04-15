@@ -1,0 +1,9 @@
+<p>Hello,</p>
+
+<p>Settlement details for <%= @data.date %>:<br>
+Amount: £<%= @data.amount %></br>
+Account details:  <%= @data.account %>.</p>
+
+<p></p>Regards,</p>
+
+<p>The Viola Corporate.</p>

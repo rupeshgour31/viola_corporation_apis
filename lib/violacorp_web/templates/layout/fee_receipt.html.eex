@@ -1,0 +1,192 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>invoice</title>
+    </head><body style="font-family:Open Sans, sans-serif; margin: 0px; padding-left: -23px;font-size: 12px;">
+        <table cellpadding="5" cellspacing="0" style="width:770px; margin: auto; padding-top: 10px;">
+            <tr>
+                <td colspan="3">
+                    <table width="100%" style="padding-left: 10px; padding-right: 10px;">
+                        <tr>
+                            <td style="width: 60%; padding: 0px 20px; text-align: left"><img src="https://app.violacorporate.com/assets/img/emails/tagline.png" /></td>
+                            <td style="width: 40%; padding: 20px 20px; text-align: right"><img src="https://app.violacorporate.com/assets/img/emails/viola-logo.png" width="60%" /></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <table width="100%" cellpadding="0" style="margin-bottom: 30px;margin-top: 30px;">
+                        <tr>
+                            <td>
+                                <table cellpadding="0" style=" padding-left: 10px; padding-right: 10px; margin-bottom: 15px;" width="100%" >
+                                    <tr>
+                                        <td colspan="3">
+
+                                            <table cellpadding="0" width="100%">
+                                                <tr>
+                                                    <td width="36%" style=" width:46%; padding-right: 4%;vertical-align: top;">
+                                                        <h2 style="font-size: 48px; font-weight:400; margin-bottom: 15px; color:#454b5d; vertical-align: top;">
+                                                            RECEIPT
+                                                        </h2>
+<!--
+                                                        <span style="border-bottom: 4px solid #be1e2d; width: 100%; display: block;">
+                                                        </span>
+-->
+                                                    </td>
+
+                                                    <td width="25%" style="width:30%; padding-top: 0px;">
+                                                        <p style="display: block; margin:5px 5px 10px 5px; font-weight: 700; font-size: 14px; color: #255364">
+                                                            Receipt Date
+                                                        </p>
+                                                        <p style="display: block; margin:5px 5px 10px 5px; font-size: 14px; color: #255364">
+                                                            <%= @data.receipt_date  %>
+                                                        </p>
+                                                        <p style="display: block; margin:5px 5px 10px 5px; font-weight: 700; font-size: 14px; color: #255364">
+                                                            Receipt Number
+                                                        </p>
+                                                        <p style="display: block; margin:5px 5px 10px 5px; font-size: 14px; color: #255364">
+                                                            INV-<%= @data.receipt_number  %>
+                                                        </p>
+                                                        <p style="display: block; margin:5px 5px 10px 5px; font-weight: 700; font-size: 14px; color: #255364">
+                                                            Reference
+                                                        </p>
+                                                        <p style="display: block; margin:5px 5px 10px 5px;  font-size: 14px; color: #255364">
+                                                            REF-<%= @data.receipt_number  %>
+                                                        </p>
+                                                    </td>
+                                                    <td width="25%" style="width:30%; padding-top: 0px;">
+                                                        <p style="display: block; margin:5px 5px 10px 5px; font-weight: 700; font-size: 14px; color: #255364">
+                                                            Viola Business Ltd
+                                                        </p>
+                                                        <p style="display: block; margin:5px 5px 10px 5px; font-weight: 700; font-size: 14px; color: #255364">
+                                                            3 Waterton Park
+                                                        </p>
+                                                        <p style="display: block; margin:5px 5px 10px 5px; font-weight: 700; font-size: 14px; color: #255364">
+                                                            Waterton
+                                                        </p>
+                                                        <p style="display: block; margin:5px 5px 10px 5px; font-weight: 700; font-size: 14px; color: #255364">
+                                                            Bridgend
+                                                        </p>
+                                                        <p style="display: block; margin:5px 5px 10px 5px; font-weight: 700; font-size: 14px; color: #255364">
+                                                            CF31 3PH
+                                                        </p>
+                                                        <p style="display: block; margin:5px 5px 10px 5px; font-weight: 700;  font-size: 14px; color: #255364">
+                                                            UNITED KINGDOM
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <table width="100%" cellspacing="0" cellpadding="8" style="margin-bottom: 50px;">
+                       <tr style="height: 50px;">
+                            <td style="background: #F7F7F7; border-top:1px solid #F0F0F0; border-bottom: 1px solid #255364; color:#255364; padding-top: 10px; padding-bottom: 10px; width: 45%; font-weight: 600; text-align: left">Description</td>
+                            <td style="background: #F7F7F7; border-top:1px solid #F0F0F0; border-bottom: 1px solid #255364; color:#255364; font-weight: 600;width: 10%;">Quantity</td>
+                            <td style="background: #F7F7F7; border-top:1px solid #F0F0F0; border-bottom: 1px solid #255364; color:#255364; font-weight: 600;width: 15%;">Unit Price </td>
+                            <td style="background: #F7F7F7; border-top:1px solid #F0F0F0; border-bottom: 1px solid #255364; color:#255364; font-weight: 600;width: 15%;">VAT</td>
+                            <td style="background: #F7F7F7; border-top:1px solid #F0F0F0; border-bottom: 1px solid #255364; text-align: right; color:#255364;  font-weight: 600;width: 15%;">Amount</td>
+                        </tr>
+                       <!-- <tr style="height: 80px;">
+                            <td style="color:#454b5d;width: 45%;text-align: left"><b>Company Name</b><br/><span> Monthly Subscription</span></td>
+                            <td style="color:#454b5d;width: 10%;">1</td>
+                            <td style=" color:#454b5d;width: 15%;">£21.00 </td>
+                            <td style="color:#454b5d;width: 15%;">£0.00</td>
+                            <td style="color:#454b5d;width: 15%;text-align: right">£21.00</td>
+                        </tr>
+<tr style="height: 80px;">
+                            <td style="color:#454b5d;width: 45%;text-align: left"><span> Extra Physical Card/s Charges</span></td>
+                            <td style="color:#454b5d;width: 10%;">2</td>
+                            <td style=" color:#454b5d;width: 15%;">£7.00 </td>
+                            <td style="color:#454b5d;width: 15%;">£0.00</td>
+                            <td style="color:#454b5d;width: 15%;text-align: right">£14.00</td>
+                        </tr> -->
+
+
+                        <%= for fees <- @data.fees  do %>
+
+                          <tr style="height: 80px;">
+                                                      <td style="color:#454b5d;width: 45%;text-align: left"><b><%= @data.company_name  %></b><br/><span> <%=  fees.fees_name %></span></td>
+                                                      <td style="color:#454b5d;width: 10%;"><%=  fees.quantity %></td>
+                                                                                  <td style=" color:#454b5d;width: 15%;">£<%=  fees.unit_price %> </td>
+                                                                                  <td style="color:#454b5d;width: 15%;">£<%=  fees.tax %></td>
+                                                                                  <td style="color:#454b5d;width: 15%;text-align: right">£<%=  fees.total_unit %></td>
+                                                  </tr>
+                        <% end %>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <table width="100%" style="margin-top: 20px; padding-left: 10px; padding-right:0px; margin-bottom: 40px; text-align: left;">
+                        <tr>
+                            <td>
+                                <h3 style="border-left:4px solid #255364; font-weight:500;"><span style="padding-left:10px;color:#454b5d">
+                                        Thanks for your business!</span>
+                                </h3>
+                            </td>
+                            <td>
+                                <table cellpadding="10"  style="text-align: right; border-top:1px solid #255364;" width="100%">
+                                    <tr>
+                                        <td style=" background: #d1d3d4;">
+                                            <span style="padding-left: 10px;">
+                                                SUB TOTAL:
+                                            </span>
+                                        </td>
+                                        <td style=" color:#255364;">
+                                            <span style="padding-left: 10px;">
+                                                £<%= @data.subtotal_price  %>
+                                            </span>
+                                        </td>
+                                    </tr><tr>
+                                        <td style=" background: #d1d3d4;">
+                                            <span style="padding-left: 10px;">
+                                                TAX:
+                                            </span>
+                                        </td>
+                                        <td style=" color:#255364;">
+                                            <span style="padding-left: 10px;">
+                                                £<%= @data.total_tax  %>
+                                            </span>
+                                        </td>
+                                    </tr><tr>
+                                        <td style=" background: #d1d3d4; ">
+                                            <span style="padding-left: 10px;">
+                                                TOTAL DUE:
+                                            </span>
+                                        </td>
+                                        <td style=" color:#255364;">
+                                            <span style="padding-left: 10px;">
+                                                £<%= @data.total_price  %>
+                                            </span>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td style="text-align: center;">
+            <table width="100%" cellspacing="0" cellpadding="8" style=" text-align: center;">
+                        <tr style="text-align: center;">
+                            <img style="margin-top: 50px;" src="https://app.violacorporate.com/assets/img/emails/viola-group-logo.png"/><br>
+                            <p style="font-size: 11px;color:#454b5d; margin-bottom: 20px;">Viola Corporate is a trading style of Violacard Limited. The Viola Corporate current account is operated by Viola Money (Europe) Limited, which is Authorised by the Financial Conduct Authority as an Authorised Electronic Money Institution (900893). Registered in England and Wales with Company Number 09703795. Registered Office address, 3 Waterton Park, Bridgend, Wales, CF31 3PH. </p>
+                            <p style="font-size: 11px;color:#454b5d; margin-bottom: 20px;">The Viola Corporate Mastercard card is issued by AF Payments Limited pursuant to a license by Mastercard International. Mastercard and the Mastercard brand mark are registered trademarks of Mastercard International.</p>
+                            <p style="font-size: 11px;color:#454b5d; margin-bottom: 20px;">© Viola Money Ltd 2019</p>
+                        </tr>
+                    </table>
+                    </td>
+            </tr>
+        </table>
+    </body>
+</html>

@@ -1,0 +1,11 @@
+<div style="margin-bottom:20px;">Hi,</div>
+
+<div style="margin-bottom:20px;">Your one-time password is: <%= @data.otp_code %></div>
+
+<div style="margin-bottom:20px;">Please use it to complete your registration.</div>
+
+<div style="margin-bottom:20px;">For any queries, please contact us using any of the methods below.</div>
+
+<div style="margin-bottom:20px;">Regards,</div>
+
+<div style="margin-bottom:40px;">The Viola Corporate Support Team.</div>

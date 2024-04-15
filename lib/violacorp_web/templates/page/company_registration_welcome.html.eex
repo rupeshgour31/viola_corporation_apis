@@ -1,0 +1,11 @@
+<div style="margin-bottom:20px;">Hi <%= @data.company_name %>,</div>
+
+<div style="margin-bottom:20px;">Good news! Your application for your Viola Corporate account has been authorised and approved.</div>
+
+<div style="margin-bottom:20px;">You can now log in to your Viola Corporate account dashboard by using the registered email and password.</div>
+
+<div style="margin-bottom:20px;">For any queries, please contact us using any of the methods below.</div>
+
+<div style="margin-bottom:20px;">Regards,</div>
+
+<div style="margin-bottom:40px;">The Viola Corporate Support Team.</div>

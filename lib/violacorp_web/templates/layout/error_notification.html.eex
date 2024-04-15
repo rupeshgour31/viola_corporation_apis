@@ -1,0 +1,7 @@
+Violacorporate
+Accomplish create identification failed
+Status Code: <%= @data.data.status_code %>
+Message: <%= @data.data.message %>
+Employee_id: <%= @data.data.employee_id %>
+Employee_name: <%= @data.data.employee_name %>
+

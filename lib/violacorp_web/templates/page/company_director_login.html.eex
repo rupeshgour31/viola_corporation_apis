@@ -1,0 +1,8 @@
+<p>Hello <%= @data.director_name %>,</p>
+
+<p>You have been added as a director of <%= @data.company_name %>, please complete the registration.<br><br>
+Use the following credentials to login and complete your registration.<br>
+Email: <%= @data.email %><br>
+Password: <%= @data.password %><br>
+Link: <%= @data.link %><br><br>
+Download the App now to get started.<br></p>

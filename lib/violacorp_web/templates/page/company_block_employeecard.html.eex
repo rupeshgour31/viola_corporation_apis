@@ -1,0 +1,7 @@
+<p>Hello <%= @data.employee_name %>,</p>
+
+<p>Your card ending: <%= @data.card %>, has been locked by your Company.<br>
+Please contact your administrator.<br>
+Regards,</p>
+
+<p>The Viola Corporate Support Team.</p>

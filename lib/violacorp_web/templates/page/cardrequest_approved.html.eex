@@ -1,0 +1,9 @@
+<p>Hello <%= @data.employee_name %>,</p>
+
+<>Your request for a <%= @data.card_type %> card has been Approved.<br>
+<%= if @data.card_type == "virtual" do %>Login to your app to start using your Virtual Card. <% else %>
+It will be delivered to your registered address in the next 7 days. <% end %>
+<br>
+Regards,</p>
+
+<p>The Viola Corporate Support Team.</p>

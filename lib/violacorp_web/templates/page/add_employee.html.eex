@@ -1,0 +1,8 @@
+<p>Hello <%= @data.employee_name %>,</p>
+
+<p><%= @data.company_name %> would like to provide you with a ViolaCorporate card to pay for your company expenses.<br><br>
+Use the following credentials to login and complete your registration.<br>
+Email: <%= @data.email %><br>
+Password: <%= @data.pswd %><br><br>
+
+Download the App now to get started.<br></p>

@@ -1,0 +1,10 @@
+<p>Hello <%= @data.employee_name %>,</p>
+
+<p>Activate your card ending <%= @data.card %><br>
+Activation Code: <%= @data.activation_code %><br>
+
+Your card will be ready to use once activated.<br>
+
+Regards,</p>
+
+<p>The Viola Corporate Support Team.</p>

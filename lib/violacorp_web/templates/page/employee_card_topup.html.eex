@@ -1,0 +1,9 @@
+<p>Hello <%= @data.employee_name %>,</p>
+
+<p>You have received <%= @data.amount %> <%= @data.currency %> in your card ending: <%= @data.card %><br>
+
+Login to your App to view.</p>
+
+Regards,</p>
+
+<p>The Viola Corporate Support Team.</p>

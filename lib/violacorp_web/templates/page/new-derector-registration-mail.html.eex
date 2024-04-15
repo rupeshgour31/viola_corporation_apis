@@ -1,0 +1,27 @@
+                    <p>Hello  <strong><%= @data.director_name %></strong>,</p>
+
+                    <p>The company <strong><%= @data.company_name %></strong> has been registered for the Viola Corporate Online Business Account by <strong><%= @data.first_director_name %></strong>.</p>
+
+                                <p>Viola Corporate is the complete finance solution for your business. It enable you to accept client payments and pay supplier invoices from your own online business account with your own unique sort code and account number. The Viola Corporate Card Management system also allows you to manage staff expenses in real time utilising employee prepaid debit cards.</p>
+
+                                <p>As you have been identified as a controller of <strong><%= @data.company_name %></strong> we require the following information from you in order to complete the registration.</p>
+                    <p>ViolaCorporate Support</p>
+<ul style="color:#3B728B;">
+                                <li style="margin-bottom: 10px;"><span style="color:#979797;">Your Contact details</span></li>
+                                <li style="margin-bottom: 10px;"><span style="color:#979797;">Government Issued Identification such as Passport or UK Driving Licence. Please note if you are using your driving licence for identification purposes you will need an alternative document for your proof of address. You will be asked to upload a copy of the document.</span></li>
+                                <li style="margin-bottom: 10px;"><span style="color:#979797;">Proof of your home address. This can be a utility bill or bank statement, both of which must be dated within the last 3 months. A UK Driving Licence can also be used if a passport has been used for identification. You will be asked to upload a copy of the document.</span></li>
+                                </ul>
+                                <p>To approve the opening of the Viola Corporate online business account, you will be asked to accept our Terms & Conditions and sign the mandate.</p>
+                                <p>To log into the registration please use the email and one-time password provided:</p>
+                                <p>Email - <span style="color: #396F88"><%= @data.email %></span><br/>
+                                    Password - <span style="color: #396F88"><%= @data.password %></span>
+</p>
+                                <p>You can access the registration here:</p>
+                                <div style="text-align: center; padding-top: 40px; padding-bottom: 40px;">
+                                <a style="margin: auto; text-decoration:none;display:inline-block;color:#ffffff;background-color:#396F88;border-radius:4px;-webkit-border-radius:4px;-moz-border-radius:4px;width:auto; width:auto;;border-top:1px solid #3AAEE0;border-right:1px solid #3AAEE0;border-bottom:1px solid #3AAEE0;border-left:1px solid #3AAEE0;padding-top:2px;padding-bottom:2px;font-family:Arial, 'Helvetica Neue', Helvetica, sans-serif;text-align:center;mso-border-alt:none;word-break:keep-all;" href=<%= @data.link %> target="_blank"><span style="padding-left:50px;padding-right:50px;font-size:16px;display:inline-block;letter-spacing: 1.1px"><span style="font-size: 14px; line-height: 32px;">START YOUR REGISTRATION</span></span></a>
+                                </div>
+                                <p>If you would like to change the email address that has been used, you can change the email within the registration.</p>
+                                <p>Should you require any further assistance, please do not hesitate to contact us via <span style="color: #396F88">support@violacorporate.com</span> or call <span style="color: #396F88">02921 281 818</span>.</p>
+                                <p>Kind Regards,<br/>
+                                    Viola Corporate Onboarding Team.
+                                </p>

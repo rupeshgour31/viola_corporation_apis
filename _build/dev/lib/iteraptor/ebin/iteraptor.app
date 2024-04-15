@@ -1,0 +1,10 @@
+{application,iteraptor,
+             [{applications,[kernel,stdlib,elixir,logger]},
+              {description,"This small library allows the deep iteration / mapping of Enumerables.\n"},
+              {modules,['Elixir.Iteraptor','Elixir.Iteraptor.AST',
+                        'Elixir.Iteraptor.Extras',
+                        'Elixir.Iteraptor.Iteraptable',
+                        'Elixir.Iteraptor.Utils',
+                        'Elixir.Iteraptor.Utils.Unsupported']},
+              {registered,[]},
+              {vsn,"1.2.1"}]}.

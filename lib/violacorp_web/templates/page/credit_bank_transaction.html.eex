@@ -1,0 +1,7 @@
+<p>Hi <%= @data.receiver_name %>,</p>
+
+<p>You have received £<%= @data.amount %> from <%= @data.sender_name %>. You can find the transaction details in your account.</p>
+<p>Need help? Visit our FAQ’s.</p>
+<p>Regards,</p>
+
+<p>The Viola Corporate Support Team.</p>

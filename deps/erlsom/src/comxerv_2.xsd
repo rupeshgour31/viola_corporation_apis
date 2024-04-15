@@ -1,0 +1,107 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="employee" type="extendedpersoninfo"/>
+  <xs:complexType name="personinfo">
+    <xs:attribute name="id" type="xs:positiveInteger"/>
+  </xs:complexType>
+  <xs:complexType name="extendedpersoninfo">
+    <xs:complexContent>
+      <xs:extension base="personinfo">
+        <xs:sequence>
+          <xs:element name="firstname" type="xs:string"/>
+          <xs:element name="lastname" type="xs:string"/>
+          <xs:element name="address" type="xs:string"/>
+          <xs:element name="city" type="xs:string"/>
+          <xs:element name="country" type="xs:string"/>
+        </xs:sequence>
+        <xs:attributeGroup ref="attr"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:attributeGroup name="attr">
+    <xs:attribute name="usrCode" type="xs:string" use="required"/>
+  </xs:attributeGroup>
+
+
+  <xs:attributeGroup name="basicUserAttrGrp">
+    <xs:attribute name="name" type="xs:string" use="required"/>
+    <xs:attribute name="usrCode" type="xs:string" use="required"/>
+    <xs:attribute name="mbrId" type="xs:string" use="required"/>
+    <xs:attribute name="defaultDlvryAreaId" type="xs:string" use="required"/>
+    <xs:attribute name="defaultAcctId" type="xs:string" use="required"/>
+    <xs:attribute name="state" type="xs:string" use="required"/>
+  </xs:attributeGroup>
+
+  <xs:attributeGroup name="userOrdrReqAttrGrp">
+    <xs:attribute name="orderReqActive" type="xs:boolean" use="optional"/>
+    <xs:attribute name="sendMail" type="xs:boolean" use="optional"/>
+    <xs:attribute name="sendSMS" type="xs:boolean" use="optional"/>
+    <xs:attribute name="mobileNumber" type="xs:string" use="optional"/>
+  </xs:attributeGroup>
+
+  <xs:attributeGroup name="existingUserAttrGrp">
+    <xs:attribute name="usrId" type="xs:int" use="required"/>
+    <xs:attribute name="revisionNo" type="xs:long" use="required"/>
+  </xs:attributeGroup>
+
+  <xs:complexType name="BasicUserType" abstract="true">
+    <xs:sequence>
+      <xs:element name="AssgAcctId" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+      <xs:element name="UsrRole" type="xs:string" minOccurs="1" maxOccurs="unbounded"/>
+    </xs:sequence>
+    <xs:attributeGroup ref="basicUserAttrGrp"/>
+  </xs:complexType>
+
+  <xs:complexType name="ExistingUserType" abstract="true">
+    <xs:complexContent>
+      <xs:extension base="BasicUserType">
+        <xs:attributeGroup ref="existingUserAttrGrp"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  
+  <xs:element name="UserRprt" final="#all">
+    <xs:complexType>
+      <xs:annotation>
+        <xs:documentation>
+          The User Report will be returned as a response to a Login Request and broadcasted after any changes done to the user data and user assignments in the backend system.
+        </xs:documentation>
+      </xs:annotation>
+      <xs:complexContent>
+        <xs:extension base="ExistingUserType">
+          <xs:sequence>
+            <xs:element name="StandardHeader" type="StandardHeaderType" minOccurs="1" maxOccurs="1"/>
+          </xs:sequence>
+          <xs:attribute name="sessionId" type="xs:long" use="required"/>
+          <xs:attribute name="connectionLossMsg" type="xs:string" use="optional"/>
+          <xs:attribute name="mbrName" type="xs:string" use="required"/>
+        </xs:extension>
+      </xs:complexContent>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:complexType name="ClientDataType">
+    <xs:attribute name="clientUsrId" type="xs:int" use="optional"/>
+    <xs:attribute name="clientMbrId" type="xs:string" use="optional"/>
+    <xs:attribute name="clientAcctId" type="xs:string" use="optional"/>
+    <xs:attribute name="clientDataInt" type="xs:int" use="optional"/>
+    <xs:attribute name="clientDataString" type="xs:string" use="optional"/>
+    <xs:attribute name="clientCorrelationId" type="xs:string" use="optional"/>
+  </xs:complexType>
+
+  <xs:complexType name="StandardHeaderType">
+    <xs:annotation>
+      <xs:documentation>
+        Every message will contain a header at the beginning of the message.
+      </xs:documentation>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element name="clientData" type="ClientDataType" minOccurs="0" maxOccurs="1"/>
+    </xs:sequence>
+    <xs:attribute name="marketId" type="xs:string" use="required"/>
+    <xs:attribute name="onBehalfUserId" type="xs:int" use="optional"/>
+  </xs:complexType>
+
+
+</xs:schema>
+

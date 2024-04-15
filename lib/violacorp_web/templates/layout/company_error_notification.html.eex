@@ -1,0 +1,7 @@
+Violacorporate
+Accomplish Company create identification failed
+Status Code: <%= @data.data.status_code %>
+Message: <%= @data.data.message %>
+Commmanall_id: <%= @data.data.commmanall_id %>
+Company: <%= @data.data.company_name %>
+

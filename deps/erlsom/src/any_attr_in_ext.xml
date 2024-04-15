@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<UserRprt xmlns="http://www.deutsche-boerse.com/comxerv/v4.2" 
+          sessionId="123345" 
+          existingUserAttr="123456" 
+          basicUserAttr="TRD006" 
+          >
+  <BasicUserTypeElement>ABC123</AssgAcctId>
+  <StandardHeader marketId="EPEX"/>
+</UserRprt>

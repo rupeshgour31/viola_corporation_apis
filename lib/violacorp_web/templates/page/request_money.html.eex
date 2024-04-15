@@ -1,0 +1,9 @@
+<div style="margin-bottom:20px;">Hi <%= @data.company_name %>,</div>
+
+<div style="margin-bottom:20px;"><%= @data.employee_name %> has requested £<%= @data.amount %> GBP for card ending: <%= @data.card %></div>
+
+<div style="margin-bottom:20px;">Log in to your dashboard to respond.</div>
+
+<div style="margin-bottom:20px;">Regards,</div>
+
+<div style="margin-bottom:40px;">The Viola Corporate Support Team.</div>

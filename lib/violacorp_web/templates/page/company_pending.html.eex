@@ -1,0 +1,13 @@
+<div style="margin-bottom:20px;">Hi <%= @data.director_name %>,</div>
+
+<div style="margin-bottom:20px;">Welcome to Viola Corporate. We are delighted to have you and your company on board!</div>
+
+<div style="margin-bottom:20px;">Our customer service team are currently reviewing your application and will email you soon with further documentation to be signed.</div>
+
+<div style="margin-bottom:20px;">Upon receipt of the signed documents and verification is completed we will contact you via email to confirm that the account is opened.</div>
+
+<div style="margin-bottom:20px;">For any queries in the meantime, please do not hesitate to contact us via email support@violacorporate.com or give us a call on 02921 281 818.</div>
+
+<div style="margin-bottom:20px;">Regards,</div>
+
+<div style="margin-bottom:40px;">The Viola Corporate Support Team.</div>

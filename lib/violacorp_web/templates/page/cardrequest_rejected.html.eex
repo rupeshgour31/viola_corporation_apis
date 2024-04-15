@@ -1,0 +1,7 @@
+<p>Hello <%= @data.employee_name %>,</p>
+
+<p>Your request for a <%= @data.card_type %> card has been Rejected.<br>
+Get in touch with your Administrator to find out more.<br>
+Regards,</p>
+
+<p>The Viola Corporate Support Team.</p>

@@ -1,0 +1,11 @@
+<div style="margin-bottom:20px;">Hi <%= @data.company_name %>,</div>
+
+<div style="margin-bottom:20px;"><%= @data.employee_name %> has requested a new <%= @data.card_type %> <%= @data.currency %> Viola Corporate card.</div>
+
+<div style="margin-bottom:20px;">Please log in to your dashboard to authorise or decline.</div>
+
+<div style="margin-bottom:20px;">For any queries, please contact us using any of the methods below.</div>
+
+<div style="margin-bottom:20px;">Regards,</div>
+
+<div style="margin-bottom:40px;">The Viola Corporate Support Team.</div>

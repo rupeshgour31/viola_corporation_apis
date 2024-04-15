@@ -1,0 +1,7 @@
+<p>Hello <%= @data.company_name %>,</p>
+<p>You have <b>Approved</b> a transaction request of <%= if @data.currency == "GBP" do "£" end %><%= if @data.currency !== "GBP" do "#{@data.currency} "  end %><%= @data.amount %> to <%= @data.employee_name %> on card ending: <%= @data.card %>.<br>
+Remarks:  <%= @data.company_reason %> <br>
+
+Regards,</p>
+
+<p>The Viola Corporate Support Team.</p>

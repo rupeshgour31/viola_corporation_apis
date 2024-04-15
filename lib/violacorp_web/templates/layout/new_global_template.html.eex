@@ -1,0 +1,160 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional //EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><!--[if IE]><html xmlns="http://www.w3.org/1999/xhtml" class="ie"><![endif]--><!--[if !IE]><!-->
+<html style="margin: 0;padding: 0;" xmlns="http://www.w3.org/1999/xhtml"><!--<![endif]-->
+
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Viola Corporate | Company Application Approved</title>
+    <!--[if !mso]><!--><meta http-equiv="X-UA-Compatible" content="IE=edge" /><!--<![endif]-->
+    <meta name="viewport" content="width=device-width" />
+
+    <style type="text/css">
+      @media only screen and (min-width: 620px){.wrapper{min-width:600px !important}.wrapper h1{}.wrapper h1{font-size:40px !important;line-height:47px !important}.wrapper h2{}.wrapper h2{font-size:24px !important;line-height:32px !important}.wrapper h3{}.wrapper h3{font-size:20px !important;line-height:28px !important}.column{}.wrapper .size-8{font-size:8px !important;line-height:14px !important}.wrapper .size-9{font-size:9px !important;line-height:16px !important}.wrapper .size-10{font-size:10px !important;line-height:18px !important}.wrapper .size-11{font-size:11px !important;line-height:19px !important}.wrapper .size-12{font-size:12px !important;line-height:19px !important}.wrapper .size-13{font-size:13px !important;line-height:21px !important}.wrapper .size-14{font-size:14px !important;line-height:21px !important}.wrapper .size-15{font-size:15px !important;line-height:23px 
+      !important}.wrapper .size-16{font-size:16px !important;line-height:24px !important}.wrapper .size-17{font-size:17px !important;line-height:26px !important}.wrapper .size-18{font-size:18px !important;line-height:26px !important}.wrapper .size-20{font-size:20px !important;line-height:28px !important}.wrapper .size-22{font-size:22px !important;line-height:31px !important}.wrapper .size-24{font-size:24px !important;line-height:32px !important}.wrapper .size-26{font-size:26px !important;line-height:34px !important}.wrapper .size-28{font-size:28px !important;line-height:36px !important}.wrapper .size-30{font-size:30px !important;line-height:38px !important}.wrapper .size-32{font-size:32px !important;line-height:40px !important}.wrapper .size-34{font-size:34px !important;line-height:43px !important}.wrapper .size-36{font-size:36px !important;line-height:43px !important}.wrapper 
+      .size-40{font-size:40px !important;line-height:47px !important}.wrapper .size-44{font-size:44px !important;line-height:50px !important}.wrapper .size-48{font-size:48px !important;line-height:54px !important}.wrapper .size-56{font-size:56px !important;line-height:60px !important}.wrapper .size-64{font-size:64px !important;line-height:63px !important}}
+
+      @media only screen and (min-width: 620px){
+        .social_col.first { width: 28%; }
+        .social_col { width: 46%; float: left; }
+        .social_col.last { width: 22%; }
+      }
+    </style>
+
+    <style type="text/css">
+      body {
+        background-color:#afafaf;
+        font-family: Helvetica Neue,Helvetica,Arial,sans-serif; 
+        margin: 0;
+        padding: 60px 0;
+      }
+      table {
+        border-collapse: collapse;
+        table-layout: fixed;
+      }
+      * {
+        line-height: inherit;
+      }
+      div.header {
+        max-width: 400px!important;
+        -fallback-width: 95%!important;
+        width: calc(100% - 20px)!important;
+      }
+
+      @media (min-width:400px) { padding: 30px!important;}
+    </style>
+  </head>
+
+  <body class="full-padding" style="font-family: Helvetica Neue,Helvetica,Arial,sans-serif; margin: 0;padding: 60px 0;-webkit-text-size-adjust: 100%;">
+
+    <table class="wrapper" style="border-collapse: collapse;table-layout: fixed;min-width: 320px;width: 100%;background-color: #afafaf;" cellpadding="0" cellspacing="0" role="presentation">
+      <tbody>
+        <tr>
+          <td>
+
+            <div role="section">
+              <div class="layout one-col fixed-width" style="margin:0 auto;max-width: 600px;min-width: 320px;width:100%;overflow-wrap:break-word;word-wrap: break-word;word-break:break-word;">
+                <a href="https://www.violacorporate.com" target="blank">
+                  <div role="banner" style="width: 100%;height:100px; background-color: #1F3D48;background-position: center;background-image: url(https://app.violacorporate.com/assets/img/emails-one/logo-bar.jpg);background-repeat: no-repeat; background-size:cover;">
+                  </div>
+                </a>
+              </div>
+            </div>
+
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <div role="section">
+              <div class="layout one-col fixed-width" style="margin:0 auto;max-width: 600px;min-width: 320px;width:100%;overflow-wrap:break-word;word-wrap: break-word;word-break:break-word;">
+                <div role="content content_padd" style="background-color: #ffffff; padding:20px 40px;">
+                  <%= render ViolacorpWeb.PageView, @data.layoutfile , data: @data %>
+                  <div>
+                    <a href="https://play.google.com/store/apps/details?id=com.viola.corporate" target="blank" style="height:44px; text-decoration:none; display: inline-block;">
+                      <img src="https://app.violacorporate.com/assets/img/emails-one/google-play.png" style="height:44px; width:auto; margin-right:20px;">
+                    </a>
+                    <a href="https://itunes.apple.com/us/app/violacorporate/id1378903324?mt=8&ign-mpt=uo%3D4" target="blank" style="height:44px; text-decoration:none; display: inline-block;">
+                      <img src="https://app.violacorporate.com/assets/img/emails-one/app-store.png" style="height:44px; width:auto;">
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </td>
+        </tr>
+        
+        <tr>
+          <td>
+            <div role="section">
+              <div class="layout one-col fixed-width" style="margin:0 auto;max-width: 600px;min-width: 320px;width:100%;overflow-wrap:break-word;word-wrap: break-word;word-break:break-word;">
+                <div role="banner" style="width:100%;height:180px; background-color: #1F3D48;background-position: center;background-image: url(https://app.violacorporate.com/assets/img/emails-one/phone-card-bg.jpg);background-repeat:no-repeat;background-size:cover;">
+                </div>
+              </div>
+            </div>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <div role="section">
+              <div class="layout one-col fixed-width" style="margin:0 auto;max-width: 600px;min-width: 320px;width:100%;overflow-wrap:break-word;word-wrap: break-word;word-break:break-word;">
+                <div role="content content_padd" style="background-color: #ffffff; padding:20px 40px; height: 50px;">
+
+                  <div class="telephone social_col first" style="margin-bottom:20px; text-align:center;">
+                    <span style="height:24px; display: inline-block;"><img src="https://app.violacorporate.com/assets/img/emails-one/phone.png" style="height:24px; width:auto; margin-right:4px;"></span>
+
+                    <a href="tel:02921 281818" style="color:#1F3D48; height:24px; display: inline-block; text-decoration:none; font-size: 14px; vertical-align: middle;">02921 281 818</a>
+                  </div>
+
+                  <div class="email social_col" style="margin-bottom:20px; text-align:center;">
+                    <span style="height:24px; display: inline-block;"><img src="https://app.violacorporate.com/assets/img/emails-one/email.png" style="height:20px; padding: 2px 0; width:auto; margin-right:4px;"></span>
+
+                    <a href="mailto:support@violacorporate.com" style="color:#1F3D48; height:24px; display: inline-block; text-decoration:none; font-size: 14px; vertical-align: middle;">support@violacorporate.com</a>
+                  </div>
+
+                  <div class="social social_col last" style="margin-bottom:20px; text-align:center;">
+                    <a href="https://twitter.com/ViolaCorporate" target="blank" style="height:28px; text-decoration:none; display: inline-block;">
+                      <img src="https://app.violacorporate.com/assets/img/emails-one/twitter.png" style="height:28px; width:auto; margin-right:10px;">
+                    </a>
+
+                    <a href="https://facebook.com/violacorporateuk" target="blank" style="height:28px; text-decoration:none; display: inline-block;">
+                      <img src="https://app.violacorporate.com/assets/img/emails-one/fb.png" style="height:28px; width:auto;">
+                    </a>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <div role="section">
+              <div class="layout one-col fixed-width" style="margin:0 auto;max-width: 600px;min-width: 320px;width:100%;overflow-wrap:break-word;word-wrap: break-word;word-break:break-word;">
+                <div role="content" style="font-size:12px;text-align:center;padding:20px 0;">
+                  <div style="margin-bottom:10px;">Viola Corporate is a trading style of Violacard Limited. The Viola Corporate current account is operated by Viola Money (Europe) Limited, which is Authorised by the Financial Conduct Authority as an Authorised Electronic Money Institution (900893). Registered in England and Wales with Company Number 09703795. Registered Office address, 3 Waterton Park, Bridgend, Wales, CF31 3PH. </div>
+                  <div style="margin-bottom:10px;">The Viola Corporate Mastercard card is issued by AF Payments Limited pursuant to a license by Mastercard International. Mastercard and the Mastercard brand mark are registered trademarks of Mastercard International.</div>
+                  <div style="margin-bottom:10px;">© Viola Money Ltd 2019</div>
+                </div>
+              </div>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div role="section">
+              <div class="layout one-col fixed-width" style="margin:0 auto;max-width: 600px;min-width: 320px;width:100%;overflow-wrap:break-word;word-wrap: break-word;word-break:break-word;">
+                <div role="content" style="font-size:12px;text-align:center;padding:0;">
+                  <img src="https://app.violacorporate.com/assets/img/emails-one/powered-by-viola.png">
+                </div>
+              </div>
+            </div>
+          </td>
+        </tr>
+
+      </tbody>
+    </table>
+
+  </body>
+
+</html>
